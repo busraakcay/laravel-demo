@@ -1,0 +1,122 @@
+body {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  footer {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 1140px;
+    padding: 10px;
+    margin: 20px auto;
+  }
+  
+  /* create pizza form */
+  
+  .create-pizza {
+    background: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .create-pizza input[type=checkbox] {
+    margin: 10px;
+  }
+  
+  .create-pizza input[type=submit] {
+    background: #c01313;
+    padding: 8px 20px;
+    color: #fff;
+    border: 0;
+    margin-top: 20px;
+  }
+  
+  /* pizza details page */
+  
+  .pizza-details {
+    background: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .pizza-details p {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .pizza-details button {
+    background: #c01313;
+    padding: 8px 20px;
+    color: #fff;
+    border: 0;
+    margin-top: 20px;
+  }
+    
+  /* pizza index page */
+  
+  .pizza-index h1 {
+    margin-bottom: 40px;
+  }
+  
+  .pizza-index .pizza-item {
+    margin: 10px 0;
+    padding: 12px;
+  }
+  
+  .pizza-index .pizza-item img {
+    width: 60px;
+    display: inline-block;
+  }
+  
+  .pizza-index .pizza-item h4 {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 20px;
+  }
+  
+  .pizza-index .pizza-item h4 a {
+    color: #777;
+    text-decoration: none !important;
+  }
+  
+  footer {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  p.copyright {
+    color: rgb(48, 45, 45);
+    line-height: 40px;
+    font-size: 0.7em;
+  }
+  
+  .title {
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding: 8px 0;
+    color: c01313;
+    margin-left: 80px;
+  }
+  
+  .dbDongusu {
+    padding-top: 20px;
+    margin-left: 80px;
+    text-align: center;
+  }
+
+.aTag{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    display: block;
+}
