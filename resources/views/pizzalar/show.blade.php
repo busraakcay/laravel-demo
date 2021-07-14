@@ -9,7 +9,7 @@
                 <h5 class="title" style="margin-top: 10px; text-align: center;">{{$pizza->name}} - {{trans("text.orderDetail")}}</h5>
                 <p class="type">{{trans("text.type")}}: {{$pizza->type}}</p>
                 <p class="base">{{trans("text.base")}} : {{$pizza->base}}</p>
-                <p class="toppings">{{trans("text.topping")}}:</p>
+                <p class="toppings">{{trans("text.chosenToppings")}}:</p>
                 <ul>
                     @foreach ($pizza->toppings as $topping)
                     <li>{{$topping}}</li>

@@ -19,6 +19,7 @@ return [
     "thin" => "Thin",
     "crispy" => "Crispy",
     "topping" => "Choose your toppings",
+    "chosenToppings" => "Chosen Toppings",
     "ketchup" => "Ketchup",
     "mayonnaise" => "Mayonnaise",
     "mustard" => "Mustard",

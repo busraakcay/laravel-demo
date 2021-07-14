@@ -56,7 +56,7 @@ Route::get('/pizzalar', "PizzaController@index")->middleware("auth"); //sadece k
 //     ]); // resources/views
 // });
 
-Route::get("/pizzalar/create", "PizzaController@create", "LocalizationController@lang")->name("pizzalar.create");
+Route::get("/pizzalar/create", "PizzaController@create")->name("pizzalar.create");
 Route::post('/pizzalar', "PizzaController@store");
 Route::get("/pizzalar/{id}", "PizzaController@show")->name("pizzalar.show")->middleware("auth");
 Route::delete("/pizzalar/{id}", "PizzaController@destroy")->middleware("auth");

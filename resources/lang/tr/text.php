@@ -19,6 +19,7 @@ return [
     "thin" => "İnce",
     "crispy" => "Çıtır",
     "topping" => "Sos seçimi yapınız",
+    "chosenToppings" => "Seçilen Soslar",
     "ketchup" => "Ketçap",
     "mayonnaise" => "Mayonez",
     "mustard" => "Hardal",
