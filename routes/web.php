@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Auth; // auth işlemleri için eklenmesi gereklid
  * 
  */
 
-Route::get('/', function () {
-    return view('welcome'); // resources/views
-});
+// Route::get('/', function () {
+//     return view('welcome'); // resources/views
+// });
 
 // Route::get('/pizzalar', function () {
 //     // verileri veri tabanindan getir
@@ -40,7 +40,7 @@ Route::get('/', function () {
 // });
 
 //bu asamada bir query-sorgu parametresi tanımlanacak
-Route::get('/pizzalar', "PizzaController@index")->middleware("auth"); //sadece kullanıcıların siparişleri görüntüleyebilmesi için bir koşul
+//Route::get('/pizzalar', "PizzaController@index")->middleware("auth"); //sadece kullanıcıların siparişleri görüntüleyebilmesi için bir koşul
 
 //bu asamada "wildcard" -> route parametresi tanımlanacak;
 /**
@@ -56,10 +56,12 @@ Route::get('/pizzalar', "PizzaController@index")->middleware("auth"); //sadece k
 //     ]); // resources/views
 // });
 
+Route::get('/', "PizzaController@welcome")->name("welcome");
+Route::get('/pizzalar', "PizzaController@index")->name("pizzalar.index")->middleware("auth");
 Route::get("/pizzalar/create", "PizzaController@create")->name("pizzalar.create");
 Route::post('/pizzalar', "PizzaController@store");
 Route::get("/pizzalar/{id}", "PizzaController@show")->name("pizzalar.show")->middleware("auth");
-Route::delete("/pizzalar/{id}", "PizzaController@destroy")->middleware("auth");
+Route::delete("/pizzalar/{id}", "PizzaController@destroy")->name("pizzalar.destroy")->middleware("auth");
 
 Auth::routes([
     "register" => true //false

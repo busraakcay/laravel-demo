@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    <a href="/pizzalar" class="btn btn-primary" style="margin-top: 10px;"> {{trans("text.lookOrders")}}</a><br><br>
+                    <a href="{{ route('pizzalar.index') }}" class="btn btn-primary" style="margin-top: 10px;"> {{trans("text.lookOrders")}}</a><br><br>
                 </div>
             </div>
         </div>

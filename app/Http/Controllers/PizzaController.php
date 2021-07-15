@@ -19,6 +19,10 @@ class PizzaController extends Controller
     //     $this->middleware("auth");
     // } tüm fonksiyonlar için gerçekleştirir
 
+    public function welcome(){
+        return view('welcome');
+    }
+
     public function index(){
     // verileri veri tabanindan getir
     
@@ -60,7 +64,6 @@ class PizzaController extends Controller
     }
 
     public function create(){
-        
         return view('pizzalar.create');
     }
 

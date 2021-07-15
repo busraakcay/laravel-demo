@@ -15,7 +15,7 @@
                     <li>{{$topping}}</li>
                     @endforeach
                 </ul>
-                <form action="/pizzalar/{{$pizza->id}}" method="post">
+                <form action="{{ route('pizzalar.destroy', $pizza->id) }}" method="post">
                     @csrf
                     @method("DELETE")
                     <button class="btn btn-warning" style="margin-bottom: 5px;">{{trans("text.completeOrder")}}</button>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div style=" margin-bottom: 10px; margin-top: 5px; margin-left:auto; margin-right: 2px;">
-            <a href="/pizzalar" class="btn btn-primary">
+            <a href="{{ route('pizzalar.index') }}" class="btn btn-primary">
             {{trans("text.returnPizzas")}}</a>
         </div>
     </div>

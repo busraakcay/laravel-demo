@@ -16,7 +16,7 @@
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     <div class="wrapper create-pizza container-sm">
         <h5 class="title">{{trans("text.newPizza")}}</h5>
-        <form action="/pizzalar" method="post">
+        <form action="{{ route('pizzalar.index') }}" method="post">
             @csrf
             <div class="input-group input-group mb-3">
                 <div class="input-group-prepend">
